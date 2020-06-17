@@ -15,8 +15,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
 import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
-import { NgForComponent } from './ng-for/ng-for.component'
+import { NgForComponent } from './ng-for/ng-for.component';
+import { NgForFormComponent } from './ng-for-form/ng-for-form.component'
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { NgForComponent } from './ng-for/ng-for.component'
     NgIfComponent,
     SubNgIfComponent,
     NgForComponent,
+    NgForFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { NgForComponent } from './ng-for/ng-for.component'
     MatListModule,
     MatIconModule,
     MatDividerModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
