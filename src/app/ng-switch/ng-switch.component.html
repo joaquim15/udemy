@@ -1,0 +1,23 @@
+<mat-card class="card">
+    <mat-card-title>
+        Select
+    </mat-card-title>
+    <mat-card-content>
+        <section>
+            <p>Select the field that you need: </p>
+            <mat-radio-group [(ngModel)]="fildname">
+                <mat-radio-button value="button">Button</mat-radio-button>
+                <mat-radio-button value="checkBox">CheckBox</mat-radio-button>
+                <mat-radio-button value="progressbar">Progress Bar</mat-radio-button>
+            </mat-radio-group>
+        </section>
+
+        <br><br>
+
+        <section [ngSwitch]="fildname">
+            <button *ngSwitchCase="'button'" mat-raised-button color="warn">Button</button>
+            <mat-checkbox *ngSwitchCase="'checkBox'">CheckBox</mat-checkbox>
+            <mat-progress-bar *ngSwitchCase="'progressbar'" color="warn" mode="indeterminate"></mat-progress-bar>
+        </section>
+    </mat-card-content>
+</mat-card>
